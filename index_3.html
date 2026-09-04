@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>実家じまいノート | 実家の空き家、相続する前に確認しておきたいこと</title>
+<meta name="description" content="実家を将来相続する可能性がある方向けに、相続が発生する前に確認しておきたいことを整理したチェックリストです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3F4EC;
+    --paper-card:#FFFFFF;
+    --ink:#2B2A22;
+    --ink-soft:#5B5A4E;
+    --line:#DEDBC9;
+    --accent:#4B6B58;
+    --accent-soft:#E7EEE7;
+    --accent-ink:#FFFFFF;
+    --warm:#A9764B;
+    --warm-soft:#F3E9DE;
+    --done:#3F6B4E;
+    --done-bg:#E4EFE6;
+    --shadow: 0 1px 2px rgba(43,42,34,0.05), 0 6px 18px rgba(43,42,34,0.06);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+    line-height:1.9;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px;}
+
+  header{
+    padding:28px 0 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:900;
+    font-size:19px;
+    color:var(--accent);
+    letter-spacing:0.02em;
+  }
+  .brand-mark{
+    width:34px;height:34px;
+    border-radius:9px;
+    background:var(--accent);
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:17px;
+    flex:0 0 auto;
+  }
+
+  .hero{
+    padding:44px 0 8px;
+  }
+  .eyebrow{
+    display:inline-block;
+    background:var(--accent-soft);
+    color:var(--accent);
+    font-weight:700;
+    font-size:13px;
+    padding:5px 14px;
+    border-radius:99px;
+    letter-spacing:0.03em;
+  }
+  h1{
+    font-size:clamp(26px,5vw,32px);
+    line-height:1.5;
+    font-weight:900;
+    margin:18px 0 0;
+    text-wrap:balance;
+  }
+  .lede{
+    margin:20px 0 0;
+    color:var(--ink-soft);
+    font-size:16.5px;
+  }
+  .lede p{margin:0 0 14px;}
+  .lede p:last-child{margin-bottom:0;}
+
+  .who{
+    margin:28px 0 0;
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:20px 22px;
+    box-shadow:var(--shadow);
+  }
+  .who-label{
+    font-weight:700;
+    color:var(--accent);
+    font-size:14px;
+    margin-bottom:6px;
+  }
+
+  .progress-bar{
+    margin:36px 0 0;
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .progress-track{
+    flex:1;
+    height:10px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:99px;
+    overflow:hidden;
+  }
+  .progress-fill{
+    height:100%;
+    background:var(--accent);
+    width:0%;
+    transition:width 0.25s ease;
+  }
+  .progress-text{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+    font-weight:700;
+  }
+
+  section.block{
+    margin-top:36px;
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:26px 24px;
+    box-shadow:var(--shadow);
+  }
+  .block-head{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+  }
+  .block-num{
+    flex:0 0 auto;
+    width:36px;height:36px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    font-weight:900;
+    font-size:16px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .block-title{
+    font-size:19px;
+    font-weight:700;
+    margin:4px 0 0;
+    text-wrap:balance;
+  }
+  .items{
+    margin:18px 0 0 0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .item{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    padding:12px 10px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  .item:hover{background:var(--paper);}
+  .item input[type="checkbox"]{
+    appearance:none;
+    -webkit-appearance:none;
+    width:24px;height:24px;
+    flex:0 0 auto;
+    margin-top:2px;
+    border:2px solid var(--line);
+    border-radius:7px;
+    background:var(--paper-card);
+    cursor:pointer;
+    position:relative;
+    transition:all 0.15s ease;
+  }
+  .item input[type="checkbox"]:checked{
+    background:var(--done);
+    border-color:var(--done);
+  }
+  .item input[type="checkbox"]:checked::after{
+    content:"";
+    position:absolute;
+    left:7px;top:3px;
+    width:6px;height:11px;
+    border:solid #fff;
+    border-width:0 2px 2px 0;
+    transform:rotate(45deg);
+  }
+  .item input[type="checkbox"]:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:2px;
+  }
+  .item-text{
+    font-size:16px;
+    color:var(--ink);
+  }
+  .item-note{
+    display:block;
+    margin-top:4px;
+    font-size:14px;
+    color:var(--ink-soft);
+    line-height:1.7;
+  }
+  .item.checked .item-text{
+    color:var(--ink-soft);
+    text-decoration:line-through;
+    text-decoration-color:var(--line);
+  }
+
+  .callout{
+    margin-top:16px;
+    background:var(--warm-soft);
+    border-left:3px solid var(--warm);
+    border-radius:0 10px 10px 0;
+    padding:14px 16px;
+    font-size:14.5px;
+    color:var(--ink);
+  }
+
+  .who-to-ask{
+    margin-top:18px;
+    width:100%;
+    border-collapse:collapse;
+    font-size:14.5px;
+  }
+  .who-to-ask th,.who-to-ask td{
+    text-align:left;
+    padding:10px 8px;
+    border-bottom:1px solid var(--line);
+  }
+  .who-to-ask th{
+    color:var(--ink-soft);
+    font-weight:700;
+    font-size:13px;
+  }
+
+  .disclaimer{
+    margin-top:40px;
+    background:var(--accent-soft);
+    border-radius:14px;
+    padding:20px 22px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    line-height:1.8;
+  }
+  .disclaimer strong{color:var(--ink);}
+
+  footer{
+    margin:48px 0 60px;
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:13px;
+  }
+
+  @media (max-width:480px){
+    body{font-size:16px;}
+    section.block{padding:20px 16px;}
+    .who{padding:16px 18px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">家</span>
+      実家じまいノート
+    </div>
+  </header>
+
+  <div class="hero">
+    <span class="eyebrow">相続する前に、できること</span>
+    <h1>実家の空き家、相続する前に確認しておきたいこと</h1>
+    <div class="lede">
+      <p>実家が空き家になるかどうかは、相続が起きてから考えるのでは遅いことがあります。</p>
+      <p>「まだ相続していないから関係ない」ではなく、今のうちに知っておくことで、いざという時に慌てずに済むことがたくさんあります。</p>
+    </div>
+    <div class="who">
+      <div class="who-label">こんな方へ</div>
+      親などが所有する実家について、「将来自分が相続することになりそうだが、まだ相続はしていない」という方に向けたチェックリストです。
+    </div>
+  </div>
+
+  <div class="progress-bar">
+    <span class="progress-text" id="progressText">0 / 11 チェック済み</span>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+
+  <section class="block">
+    <div class="block-head">
+      <div class="block-num">1</div>
+      <h2 class="block-title">実家の今の状態を知る</h2>
+    </div>
+    <ul class="items">
+      <li class="item"><input type="checkbox" data-id="1-1" id="c1-1"><label class="item-text" for="c1-1">実家の名義(登記簿上の所有者)が誰になっているか確認した</label></li>
+      <li class="item"><input type="checkbox" data-id="1-2" id="c1-2"><label class="item-text" for="c1-2">実家の築年数・老朽化の状況を把握している</label></li>
+      <li class="item"><input type="checkbox" data-id="1-3" id="c1-3"><label class="item-text" for="c1-3">実家に親以外の同居人がいるかどうかを確認した</label></li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div class="block-num">2</div>
+      <h2 class="block-title">家族で将来の希望をすり合わせる</h2>
+    </div>
+    <ul class="items">
+      <li class="item"><input type="checkbox" data-id="2-1" id="c2-1"><label class="item-text" for="c2-1">親自身が実家をどうしたいか(住み続けたい/将来売ってよい/貸してもよい)を聞いたことがある</label></li>
+      <li class="item"><input type="checkbox" data-id="2-2" id="c2-2"><label class="item-text" for="c2-2">兄弟姉妹など、他の相続人になりそうな人と実家の将来について話したことがある</label></li>
+      <li class="item"><input type="checkbox" data-id="2-3" id="c2-3"><label class="item-text" for="c2-3">「誰も住まなくなったらどうするか」について、家族の間で大きな認識のズレがない</label></li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div class="block-num">3</div>
+      <h2 class="block-title">空き家のまま放置した場合のリスクを知っておく</h2>
+    </div>
+    <ul class="items">
+      <li class="item">
+        <input type="checkbox" data-id="3-1" id="c3-1">
+        <label class="item-text" for="c3-1">
+          空き家を放置して市区町村から「勧告」を受けると、固定資産税の軽減(住宅用地特例)が外れて税額が上がる仕組みがあることを知っている
+          <span class="item-note">令和5年12月の法改正で、以前より軽い段階の「管理不全空家」でもこの対象になるようになりました。</span>
+        </label>
+      </li>
+      <li class="item"><input type="checkbox" data-id="3-2" id="c3-2"><label class="item-text" for="c3-2">空き家の管理(草刈り・見回り・修繕など)を誰が担うのか、想定している</label></li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div class="block-num">4</div>
+      <h2 class="block-title">相続後に必要な手続きの期限を知っておく</h2>
+    </div>
+    <ul class="items">
+      <li class="item">
+        <input type="checkbox" data-id="4-1" id="c4-1">
+        <label class="item-text" for="c4-1">
+          相続で不動産を取得した場合、名義変更(相続登記)には期限があり、知った日から3年以内に申請が必要なことを知っている
+          <span class="item-note">令和6年4月から義務化されています。正当な理由なく期限を過ぎると過料の対象になり得ます。</span>
+        </label>
+      </li>
+      <li class="item">
+        <input type="checkbox" data-id="4-2" id="c4-2">
+        <label class="item-text" for="c4-2">
+          実家を将来売却する可能性がある場合、「相続空き家の3,000万円特別控除」という制度があり、建築時期などの条件で使えるかどうかが変わることを知っている
+          <span class="item-note">昭和56年5月31日以前に建てられた家が主な対象です。実家が当てはまるか、今のうちに確認しておくと後で慌てません。</span>
+        </label>
+      </li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div class="block-num">5</div>
+      <h2 class="block-title">誰に相談すればいいかを整理しておく</h2>
+    </div>
+    <ul class="items">
+      <li class="item"><input type="checkbox" data-id="5-1" id="c5-1"><label class="item-text" for="c5-1">相談する内容によって専門家が分かれることを知っている</label></li>
+      <li class="item"><input type="checkbox" data-id="5-2" id="c5-2"><label class="item-text" for="c5-2">何から相談すればいいか分からない場合は、状況を整理してから専門家に相談する、という進め方があることを知っている</label></li>
+    </ul>
+    <table class="who-to-ask">
+      <tr><th>相談したいこと</th><th>主な相談先</th></tr>
+      <tr><td>遺産分割・家族間の話し合い</td><td>弁護士</td></tr>
+      <tr><td>相続税</td><td>税理士</td></tr>
+      <tr><td>名義変更(相続登記)</td><td>司法書士</td></tr>
+      <tr><td>売却・活用・実家の価値</td><td>不動産会社(宅建業者)</td></tr>
+    </table>
+    <div class="callout">まだ何も決まっていなくても大丈夫です。まずは今の状況を整理するところから始められます。</div>
+  </section>
+
+  <div class="disclaimer">
+    <strong>このチェックリストについて</strong><br>
+    このチェックリストは一般的な情報を整理したものであり、個別の税務・法的な判断を行うものではありません。相続開始日やご家族の状況によって適用されるルールが異なる場合があります。具体的な判断は、税理士・司法書士・弁護士などの専門家にご確認ください。
+  </div>
+
+  <footer>
+    チェックの状態はこのブラウザに保存されます(他の端末とは共有されません)
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'jikka-jimai-checklist-v1';
+  var state = {};
+  try {
+    var raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) state = JSON.parse(raw) || {};
+  } catch(e) { state = {}; }
+
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.item input[type="checkbox"]'));
+  var total = boxes.length;
+
+  function save(){
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+  }
+
+  function render(){
+    var doneCount = 0;
+    boxes.forEach(function(box){
+      var id = box.getAttribute('data-id');
+      var isChecked = !!state[id];
+      box.checked = isChecked;
+      box.closest('.item').classList.toggle('checked', isChecked);
+      if (isChecked) doneCount++;
+    });
+    var text = document.getElementById('progressText');
+    var fill = document.getElementById('progressFill');
+    if (text) text.textContent = doneCount + ' / ' + total + ' チェック済み';
+    if (fill) fill.style.width = (total ? (doneCount/total*100) : 0) + '%';
+  }
+
+  boxes.forEach(function(box){
+    box.addEventListener('change', function(){
+      var id = box.getAttribute('data-id');
+      state[id] = box.checked;
+      save();
+      render();
+    });
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
